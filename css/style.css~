@@ -1,0 +1,11 @@
+.pad{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+  	width:100%;
+	margin: 5;
+}
+.pad p,h1{
+	padding:5px 0 0 0;
+	margin:0;
+}
