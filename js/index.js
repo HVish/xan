@@ -3,7 +3,7 @@ var  mn = $(".main-nav");
     hdr = $('header').height();
 
 $(window).scroll(function() {
-  if( $(this).scrollTop() > hdr ) {
+  if( $(this).scrollTop() > 90 ) {
     mn.addClass(mns);
   } else {
     mn.removeClass(mns);
