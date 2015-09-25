@@ -21,18 +21,40 @@ body {
   position: relative; 
 }
 .main-nav {
-  z-index: 150;
-  box-shadow: 0 2px 3px rgba(0,0,0,.4);
-  border-radius: 0px;
-  margin-bottom: -50px;
+	z-index: 150;
+	box-shadow: 0px 2px 3px rgba(7, 0, 125, 0.4);
+	border-radius: 0px;
+	margin-bottom: -50px;
+	background-color: rgb(63, 31, 125);
+	border-color: #530078;
 }
 header,
 .main-nav-scrolled {
   position: fixed;
   width: 100%;
   top: 0;
+  color: #5200C8;
 }
 .main {
   background: #f2f2e8;
   padding: 50px;
+}
+.active>a{
+	background-color: #00f;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFF;
+}
+.navbar-inverse .navbar-brand {
+    color: #FFF;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #000;
+    background-color: #FFF;
+}
+navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: rgb(96, 0, 174);
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #AA1CF5;
 }
