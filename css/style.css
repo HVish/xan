@@ -65,3 +65,57 @@ navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
     color: #FFED64;
     background-color: transparent;
 }
+.social{
+	position: relative;
+}
+.social li{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+.social li,.social li a{
+	height: 100px;
+    display: block;
+}
+.fb{
+	left: 0px;
+    width: 100px;
+    background: url('../img/social.png') 0 0;
+}
+.google{
+	left: 100px;
+    width: 100px;
+    background: url('../img/social.png') 100px 0;
+}
+.twitter{
+	left: 200px;
+    width: 100px;
+    background: url('../img/social.png') -100px 0;
+}
+.youtube{
+	left: 300px;
+    width: 100px;
+    background: url('../img/social.png') -200px 0;
+}
+.instagram{
+	left: 400px;
+    width: 100px;
+    background: url('../img/social.png') -300px 0;
+}
+.fb:hover{
+    background: url('../img/social.png') 0 99px;
+}
+.google:hover{
+    background: url('../img/social.png') 100px 99px;
+}
+.twitter:hover{
+    background: url('../img/social.png') -100px 99px;
+}
+.youtube:hover{
+    background: url('../img/social.png') -200px 99px;
+}
+.instagram:hover{
+    background: url('../img/social.png') -300px 99px;
+}
