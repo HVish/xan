@@ -1,13 +1,12 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 body {
-  margin: 0;
-  padding-top: 90px;
+	margin: 0;
 }
 .main-nav,
 .main {
-  position: relative; 
+	position: relative; 
 }
 .main-nav {
 	z-index: 150;
@@ -19,14 +18,14 @@ body {
 }
 header,
 .main-nav-scrolled {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  color: #5200C8;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	color: #5200C8;
 }
 .main {
-  background: #f2f2e8;
-  padding: 50px;
+	background: #f2f2e8;
+	padding: 50px;
 }
 .active>a{
 	background-color: #00f;
@@ -54,57 +53,108 @@ navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
     color: #FFED64;
     background-color: transparent;
 }
-.social{
+.icon{
+
+}
+.Social{
 	position: relative;
 }
-.social li{
+.Social li{
 	margin: 0;
     padding: 0;
     list-style: none;
     position: absolute;
     top: 0;
+    height: 48px;
+	width: 48px;
 }
-.social li,.social li a{
-	height: 100px;
+.Social li,.Social li a{
     display: block;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
 }
 .fb{
-	left: 0px;
-    width: 100px;
-    background: url('../img/social.png') 0 0;
+	left: 0;
+    background: url('../img/social.png') -48px 0;
 }
 .google{
-	left: 100px;
-    width: 100px;
-    background: url('../img/social.png') 100px 0;
+	left: 48px;
+    background: url('../img/social.png') -96px 0;
 }
 .twitter{
-	left: 200px;
-    width: 100px;
-    background: url('../img/social.png') -100px 0;
+	left: 96px;
+    background: url('../img/social.png') 0 0;
 }
-.youtube{
-	left: 300px;
-    width: 100px;
-    background: url('../img/social.png') -200px 0;
+.linkedin{
+	left: 144px;
+    background: url('../img/social.png') -144px 0;
 }
 .instagram{
-	left: 400px;
-    width: 100px;
-    background: url('../img/social.png') -300px 0;
+	left: 192px;
+    background: url('../img/social.png') -240px 0;
 }
 .fb:hover{
-    background: url('../img/social.png') 0 99px;
+    animation-name:	fb-hover-effect;
+    animation-duration: 0.3s;
+    background: url('../img/social.png') -48px 48px;
+    opacity: 1;
+}
+@keyframes fb-hover-effect {
+    from {background: url('../img/social.png') -48px 0px;}
+    to {background: url('../img/social.png') -48px 48px;}
 }
 .google:hover{
-    background: url('../img/social.png') 100px 99px;
+	animation-name:	g-hover-effect;
+    animation-duration: 0.3s;
+    background: url('../img/social.png') -96px 48px;
+    opacity: 1;
+}
+@keyframes g-hover-effect {
+    from {background: url('../img/social.png') -96px 0px;}
+    to {background: url('../img/social.png') -96px 48px;}
 }
 .twitter:hover{
-    background: url('../img/social.png') -100px 99px;
+	animation-name:	t-hover-effect;
+    animation-duration: 0.3s;
+    background: url('../img/social.png') 0px 48px;
+    opacity: 1;
 }
-.youtube:hover{
-    background: url('../img/social.png') -200px 99px;
+@keyframes t-hover-effect {
+    from {background: url('../img/social.png') 0px 0px;}
+    to {background: url('../img/social.png') 0px 48px;}
+}
+.linkedin:hover{
+    animation-name:	l-hover-effect;
+    animation-duration: 0.3s;
+    background: url('../img/social.png') -144px 48px;
+    opacity: 1;
+}
+@keyframes l-hover-effect {
+    from {background: url('../img/social.png') -144px 0px;}
+    to {background: url('../img/social.png') -144px 48px;}
 }
 .instagram:hover{
-    background: url('../img/social.png') -300px 99px;
+	animation-name:	I-hover-effect;
+    animation-duration: 0.3s;
+    background: url('../img/social.png') -240px 48px;
+    opacity: 1;
+}
+@keyframes I-hover-effect {
+    from {background: url('../img/social.png') -240px 0px;}
+    to {background: url('../img/social.png') -240px 48px;}
+}
+.row {
+    margin:	0;
+}
+@media screen and (min-width: 480px) {
+    .icon {
+	    position: absolute;
+	    right: 240px;
+	    top: 35px;
+	}
+}
+div.fullheight{
+	height: 100vh;
+	background-color: rgba(50,50,50,1);
 }
